@@ -1,0 +1,14 @@
+#navigationBar_left{ height: auto; width: 49%; display: inline-block; margin:0; text-align: left; padding: 0;}
+#navigationBar_right{ height: auto; width: 49%;display: inline-block;margin: 0;text-align: right;padding: 0;}
+
+#navigationBar_left_iframe { max-height: 40px; height:auto; padding: 0; margin: 0; width: 100%; }
+#navigationBar_right_iframe { max-height: 40px; height:auto; padding: 0; margin: 0; width: 100%; }
+
+
+#titleBar_left{ height: auto; width: 100%; margin:0; text-align: left; padding: 0;}
+#titleBar_iframe { max-height: 7	0px; height:auto; padding: 0; margin: 0; width: 100%; }
+
+
+#main_navigation{ background-color: #fff000; min-height: 50px; height: auto; width: 50%; min-width:500px;  margin-left: auto; margin-right: auto; }
+#main_content{ background-color: #fff000; min-height: 200px; height: auto; width: 50%; min-width:500px;  margin-left: auto; margin-right: auto; 
+                                   margin-top: 10px;}

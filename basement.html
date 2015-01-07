@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>免费中文学习网站</title>
+<meta name="generator" content="Bluefish 2.2.5" >
+<meta name="author" content="chinaycheng" >
+<meta name="date" content="2015-01-07T18:36:21+0800" >
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+<link href="basement.css" rel="stylesheet" type="text/css" />
+<link href="middlelayer.css" rel="stylesheet" type="text/css" />
+<link href="upperlayer.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="body">
+       <div id="navigation">
+	      <iframe id="navigation_iframe"  src="navigationBar.html" scrolling="no" frameborder="0"></iframe>
+       </div>
+       <div id="title">
+	      <iframe id="title_iframe"  src="titleBar.html" scrolling="no" frameborder="0" ></iframe>
+       </div>
+       <div id="content">
+		       <div id="main_navigation">
+			       <div id="main_navigation_home" onclick="navigation(1)" >首页</div>
+			       <div id="main_navigation_media" onclick="navigation(2)" >在线视频</div>
+			       <div id="main_navigation_about" onclick="navigation(3)" >关于我们</div>
+		       </div>
+		       <iframe id="content_iframe" src="contentHome.html"></iframe>
+       </div>
+       <div id="footer">
+	        <iframe id="footer_iframe"  src="footerBar.html" scroling="no" frameborder="0"></iframe> 
+       </div>
+       <script type="text/javascript" >
+	       function  navigation(navigation_num) {
+	         switch(navigation_num) {
+		      	case  1 :
+	         	        document.getElementById('main_navigation_home').style.backgroundColor="#FFFFFF";
+	         	        document.getElementById('main_navigation_media').style.backgroundColor="#FFF111";
+	         	        document.getElementById('main_navigation_about').style.backgroundColor="#FFF111";
+                       document.getElementById('content_iframe').src="contentHome.html";  
+	         	        break;
+  	         	case  2:
+						     document.getElementById('main_navigation_home').style.backgroundColor="#FFF111";
+	         	        document.getElementById('main_navigation_media').style.backgroundColor="#FFFFFF";
+	         	        document.getElementById('main_navigation_about').style.backgroundColor="#FFF111";
+	         	        document.getElementById('content_iframe').src="contentMedia.html";
+	         	        break;
+  	         	case  3 :
+	         	        document.getElementById('main_navigation_home').style.backgroundColor="#FFF111";
+	         	        document.getElementById('main_navigation_media').style.backgroundColor="#FFF111";
+	         	        document.getElementById('main_navigation_about').style.backgroundColor="#FFFFFF";
+                       document.getElementById('content_iframe').src="contentAbout.html";
+	         	        break;
+	         }
+	       }
+       </script>
+</body>
+</html>
